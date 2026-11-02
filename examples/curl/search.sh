@@ -5,4 +5,4 @@ set -euo pipefail
 
 curl -sS -G "https://api.piloterr.com/v2/stubhub/search" \
   -H "x-api-key: ${PILOTERR_API_KEY}" \
-  --data-urlencode query=YOUR_VALUE
+  --data-urlencode query=nba

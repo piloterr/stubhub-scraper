@@ -15,7 +15,7 @@ import (
 
 func main() {
 	params := url.Values{}
-	params.Set("query", "YOUR_VALUE")
+	params.Set("query", "nba")
 
 	req, _ := http.NewRequest("GET", "https://api.piloterr.com/v2/stubhub/search?"+params.Encode(), nil)
 	req.Header.Set("x-api-key", os.Getenv("PILOTERR_API_KEY"))

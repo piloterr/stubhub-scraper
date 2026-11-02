@@ -151,7 +151,7 @@ Example response from the API reference, abridged — real values depend on the 
   "day_of_week": null,
   "description": "Acheter et vendre Billets Harlem Globetrotters pour mars 31 à Palais des Sports de Marseille à Marseille sur StubHub ! Les billets sont c…",
   "country_code": null,
-  "price_display": "68 €",
+  "price_display": "68,00 €",
   "venue_location": "81 rue Raymond Teisseire, 13009, Marseille, France",
   "is_parking_event": null,
   "has_active_listings": true
@@ -207,7 +207,7 @@ response = requests.get(
     "https://api.piloterr.com/v2/stubhub/search",
     headers={"x-api-key": os.environ["PILOTERR_API_KEY"]},
     params={
-        "query": "YOUR_VALUE",
+        "query": "nba",
     },
     timeout=60,
 )
@@ -251,7 +251,7 @@ type StubhubSearch = {
 };
 
 const params = new URLSearchParams({
-  "query": "YOUR_VALUE",
+  "query": "nba",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/stubhub/search?${params}`, {
@@ -272,7 +272,7 @@ POST https://api.piloterr.com/v2/stubhub/search
 x-api-key: YOUR_API_KEY
 Content-Type: application/json
 
-{"query": "YOUR_VALUE"}
+{"query": "nba"}
 ```
 </details>
 
@@ -309,7 +309,7 @@ Example response from the API reference, abridged — real values depend on the 
     "page": 1,
     "per_page": 20,
     "total_pages": null,
-    "total_results": 2176
+    "total_results": 2171
   }
 }
 ```

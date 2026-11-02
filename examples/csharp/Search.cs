@@ -10,7 +10,7 @@ using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(60) };
 http.DefaultRequestHeaders.Add("x-api-key", apiKey);
 
 var query =
-    "query=" + Uri.EscapeDataString("YOUR_VALUE");
+    "query=" + Uri.EscapeDataString("nba");
 
 var response = await http.GetAsync("https://api.piloterr.com/v2/stubhub/search?" + query);
 var body = await response.Content.ReadAsStringAsync();
