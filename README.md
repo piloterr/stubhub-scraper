@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.stubhub.com/harlem-globetrotters-marseille-tickets-3-31-2027/event/162387399/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -209,7 +209,7 @@ response = requests.get(
     params={
         "query": "nba",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
